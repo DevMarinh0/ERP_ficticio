@@ -10,10 +10,10 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
           icon: "success",
           title: "Bem-vindo!",
           text: "Login realizado com sucesso",
-          timer: 1500,
+          timer: 1700,
           showConfirmButton: false
         }).then(() => {
-          window.location.href = "../index.html"; // Redireciona após o login
+          window.location.href = "../dashboard.html"; // Redireciona após o login
         });
       } else {
         Swal.fire({

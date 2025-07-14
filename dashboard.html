@@ -14,8 +14,8 @@
 <body>
   <div class="d-flex" id="wrapper">
     <!-- Sidebar -->
-    <div class="bg-primary text-white p-4 " id="sidebar">
-      <h4 class="text-center">Sistema ERP</h4>
+    <div class="bg-success text-white p-4 " id="sidebar">
+      <h4 class="text-center">Sistema ERP Ficticio</h4>
       <ul class="nav flex-column mt-4">
         <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fas fa-home me-2"></i>Dashboard</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fas fa-user me-2"></i>Clientes</a></li>
@@ -70,6 +70,77 @@
         </div>
       </div>
     </div>
+  </div>
+
+
+  <div class="card mb-4">
+    <div class="card-header bg-primary text-white">
+      <i class="fas fa-file-invoice me-2"></i>Últimos Pedidos
+    </div>
+    <div class="card-body p-0">
+      <table class="table table-striped mb-0">
+        <thead class="table-light">
+          <tr>
+            <th>#</th>
+            <th>Cliente</th>
+            <th>Valor</th>
+            <th>Status</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#001</td>
+            <td>João Silva</td>
+            <td>R$ 350,00</td>
+            <td><span class="badge bg-success">Pago</span></td>
+            <td>08/07/2025</td>
+          </tr>
+          <tr>
+            <td>#002</td>
+            <td>Maria Souza</td>
+            <td>R$ 500,00</td>
+            <td><span class="badge bg-warning text-dark">Pendente</span></td>
+            <td>08/07/2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card mb-4">
+    <div class="card-header bg-primary text-white">
+      <i class="fas fa-history me-2"></i>Atividades Recentes
+    </div>
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i>Venda #001 finalizada por João
+        </li>
+        <li class="list-group-item"><i class="fas fa-box-open text-primary me-2"></i>Produto "Notebook Dell" adicionado
+        </li>
+        <li class="list-group-item"><i class="fas fa-user-plus text-warning me-2"></i>Cliente "Maria Souza" cadastrado
+        </li>
+        <li class="list-group-item"><i class="fas fa-money-bill-wave text-info me-2"></i>Recebimento de R$500 registrado
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-4">
+    <div class="card-header bg-primary text-white">
+      <i class="fas fa-chart-pie me-2"></i>Produtos mais vendidos
+    </div>
+    <div class="card-body">
+      <canvas id="graficoProdutosVendidos"></canvas>
+    </div>
+  </div>
+
+  <div class="alert alert-danger" role="alert">
+    <i class="fas fa-exclamation-triangle me-2"></i>Estoque baixo para o produto "Monitor LG 24''"
+  </div>
+
+  <div class="alert alert-warning" role="alert">
+    <i class="fas fa-clock me-2"></i>5 contas a receber vencem hoje.
   </div>
 
   <!-- Scripts -->

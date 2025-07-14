@@ -43,3 +43,15 @@ new Chart(ctxCaixa, {
     }
   }
 });
+
+const ctxPizza = document.getElementById('graficoProdutosVendidos').getContext('2d');
+  new Chart(ctxPizza, {
+    type: 'pie',
+    data: {
+      labels: ['Notebook', 'Teclado', 'Monitor', 'Mouse'],
+      datasets: [{
+        data: [35, 25, 20, 20],
+        backgroundColor: ['#0d6efd', '#198754', '#ffc107', '#dc3545']
+      }]
+    }
+  });
