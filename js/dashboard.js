@@ -22,28 +22,4 @@ new Chart(ctxVendas, {
   }
 });
 
-// Gráfico de Fluxo de Caixa (Pizza)
-const ctxCaixa = document.getElementById('graficoCaixa').getContext('2d');
-new Chart(ctxCaixa, {
-  type: 'pie',
-  data: {
-    labels: ['Entradas', 'Saídas'],
-    datasets: [{
-      label: 'Fluxo de Caixa',
-      data: [60, 60],
-      backgroundColor: ['#198754', '#dc3545']
-    }]
-  },
-  options: {
-    responsive: true,
-    mainInAspectRatio: true,
-    plugins: {
-      title: {
-        display: true,
-        text: 'Fluxo de Caixa Atual'
-      }
-    }
-  }
-});
-
 
