@@ -12,6 +12,7 @@ new Chart(ctxVendas, {
   },
   options: {
     responsive: true,
+    mainInAspectRatio: true,
     plugins: {
       title: {
         display: true,
@@ -29,12 +30,13 @@ new Chart(ctxCaixa, {
     labels: ['Entradas', 'Saídas'],
     datasets: [{
       label: 'Fluxo de Caixa',
-      data: [8500, 3100],
+      data: [60, 60],
       backgroundColor: ['#198754', '#dc3545']
     }]
   },
   options: {
     responsive: true,
+    mainInAspectRatio: true,
     plugins: {
       title: {
         display: true,
@@ -44,14 +46,4 @@ new Chart(ctxCaixa, {
   }
 });
 
-const ctxPizza = document.getElementById('graficoProdutosVendidos').getContext('2d');
-  new Chart(ctxPizza, {
-    type: 'pie',
-    data: {
-      labels: ['Notebook', 'Teclado', 'Monitor', 'Mouse'],
-      datasets: [{
-        data: [35, 25, 20, 20],
-        backgroundColor: ['#0d6efd', '#198754', '#ffc107', '#dc3545']
-      }]
-    }
-  });
+

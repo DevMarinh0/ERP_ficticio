@@ -1,0 +1,156 @@
+Projeto Mini ERP ou ERP Completo Utilizando Tecnologias Modernas junto com PHP
+
+-Tecnologias-
+
+Front-End: HTML CSS e Javascript 
+Bibliotecas Front end Pra ERP: Graficos: Chart.js, Axios 
+Estilo: Bootstrap 5 
+Mascara de Input: Cleave.js
+Data e Hora: Day.js
+tabelas Dinamicas: Datatables.js
+back end : PHP, e tbm para fazer Conexao com o SQL server
+
+Testes APi: Postman ou Insomnia
+
+Banco de dados Local: SQL Server 
+
+Apenas quando for para uma aplicação DEsktop(Back end: Delphi V12 e Pascal, API REST)
+
+Fluxo do Projeto ERP
+
+Cadastros (Clientes, Produtos, Fornecedores, Funcionários)
+Vendas e Orçamentos
+Compras e Suprimentos
+Estoque
+Financeiro
+RH / Ponto / Folha
+Relatórios e Dashboard
+Usuários e Segurança
+
+1. Modulo de cadastro: 
+Entidades:
+Cliente
+Fornecedor
+Produto
+Funcionário
+Transportadora
+Forma de pagamento. 
+
+Funcionalidades 
+Criar, editar, excluir e listar cadastros
+Validação de CPF/CNPJ
+Endereços vinculados (CEP automático)
+Registro de data de criação/edição. 
+
+2. Módulo de Venda / Orçamentos 
+=> Selecionar cliente
+Adicionar produtos ao pedido (quantidade e valor)
+Calcular valor total e impostos
+Definir forma de pagamento
+Emitir orçamento ou pedido de venda
+Se aprovado:
+Atualiza estoque
+Lança contas a receber
+(opcional) Emite NF-e
+Atualiza status da venda (pendente, pago, cancelado) 
+
+Regras desse Módulo 
+Não permitir venda de produto com estoque insuficiente
+Desconto máximo permitido por perfil de usuário. 
+
+3. Módulo de Compras 
+Fluxo:
+Criar pedido de compra
+Selecionar fornecedor
+Adicionar produtos
+Aprovar pedido
+Entrada no estoque quando mercadoria chegar
+Gerar contas a pagar
+Regras:
+Histórico de compras por fornecedor
+Cotação automática (comparação de preços) 
+
+4. 📦 Módulo de Estoque
+Funcionalidades:
+Entrada manual ou via compras
+Saída manual ou via vendas
+Transferência entre depósitos
+Inventário (ajuste de contagem física)
+Consulta rápida de saldo por produto
+Alertas:
+Estoque mínimo
+Produto vencido (para perecíveis)
+Movimentações recentes
+
+5. 💰 Módulo Financeiro
+Contas a Receber:
+Lançadas via módulo de vendas
+Controle de vencimentos, juros, desconto
+Registro de pagamento parcial ou total
+Geração de boleto (via API bancária)
+Contas a Pagar:
+Lançadas via módulo de compras ou manualmente
+Registro de pagamentos, comprovantes
+Fluxo de Caixa:
+Entradas e saídas do dia/mês
+Saldo previsto e realizado
+Regras
+Impedir pagamento com saldo insuficiente (opcional)
+Acesso restrito a usuários financeiros
+
+6. 👨‍💼 Módulo de RH / Funcionários
+Funcionalidades:
+Cadastro de funcionários
+Controle de ponto (manual ou digital)
+Geração de folha de pagamento (simulação)
+Férias, horas extras, faltas
+Regras:
+Cálculo de salário com base em jornada e adicionais
+Relatórios para contabilidade
+
+7. 📈 Relatórios e Dashboard
+Dashboard inicial:
+Total de vendas no mês
+Produtos mais vendidos
+Clientes inadimplentes
+Gráficos de barras/pizza (ex: fluxo de caixa)
+Relatórios:
+Vendas por período
+Estoque atual
+Contas vencidas
+Histórico de compras/vendas por cliente
+Ferramentas:
+Exportar para PDF, Excel
+Filtros por data, status, cliente
+
+8. 🔐 Módulo de Usuários e Permissões
+Funcionalidades:
+Login com senha
+Perfis: admin, vendedor, financeiro, RH, etc.
+Controle de acesso a telas e funcionalidades
+Log de atividades (ações dos usuários)
+Regras:
+Vendedor não pode editar financeiro
+RH não pode acessar dados comerciais
+
+Fluxo entre Modulos
+1. Cadastro do cliente → 
+2. Cadastro do produto → 
+3. Venda é registrada → 
+4. Estoque é reduzido →
+5. Contas a receber são criadas →
+6. Cliente paga → 
+7. Caixa é atualizado →
+8. Dashboard mostra os indicadores
+
+REGRAS DE NEGÓCIO CRÍTICAS
+Regra	Descrição
+Estoque mínimo	Bloqueia venda se não houver saldo
+Cadastro duplicado	Impede CPF/CNPJ repetido
+Fluxo financeiro	Valor da venda precisa bater com entrada no caixa
+Permissões de acesso	Usuário só vê o que for autorizado
+Cálculo de impostos	Aplica impostos por produto ou cliente (simulado)
+
+
+Link de Inspiração
+https://bootstrapdemos.wrappixel.com/xtreme/dist/dark/index5.html
