@@ -17,22 +17,19 @@ html,*{
 }
 
 .img-logo {
-  width: 80px;
-  height: 80px;
-  padding: 0;
-  margin: 0;
+  width: 90%;
+  height: 180px;
+  object-fit: cover;
 }
 
 .bg-green {
   background-color: #064018;
   width: auto;
   height: auto;
-  border-radius: 0px 0.3rem 0.3rem 0px;
 }
 
 li a {
   border: 1px solid #f8f9fa !important;
-  border-radius: 10px;
   text-decoration: none;
   color: inherit;
 }
@@ -45,4 +42,9 @@ li a:hover{
 }
 .sidebar{
   overflow-y: auto;
+}
+.bg-green-header{
+  background-color: #048b2f;
+  width: 1000px;
+  height: 90px;
 }
