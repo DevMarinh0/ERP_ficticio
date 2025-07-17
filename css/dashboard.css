@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html,*{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
 #wrapper {
   display: flex;
   height: 100vh;
@@ -10,8 +17,10 @@
 }
 
 .img-logo {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  margin: 0;
 }
 
 .bg-green {
@@ -29,7 +38,7 @@ li a {
 }
 li a:hover{
   transition: 0.3s background-color;
-  background-color: #0fa13d;
+  background-color: #048b2f;
 }
 .nav-item{
   margin-bottom: 1rem;
