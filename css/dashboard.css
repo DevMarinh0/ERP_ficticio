@@ -1,14 +1,39 @@
 #wrapper {
   display: flex;
   height: 100vh;
-}
-
-#sidebar {
-  width: 250px;
-  min-height: 100vh;
+  overflow: hidden;
 }
 
 #page-content {
   flex-grow: 1;
   background-color: #f8f9fa;
+}
+
+.img-logo {
+  width: 150px;
+  height: 150px;
+}
+
+.bg-green {
+  background-color: #064018;
+  width: auto;
+  height: auto;
+  border-radius: 0px 0.3rem 0.3rem 0px;
+}
+
+li a {
+  border: 1px solid #f8f9fa !important;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+li a:hover{
+  transition: 0.3s background-color;
+  background-color: #0fa13d;
+}
+.nav-item{
+  margin-bottom: 1rem;
+}
+.sidebar{
+  overflow-y: auto;
 }

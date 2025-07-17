@@ -4,113 +4,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ERP - Dashboard</title>
+  <title>ERP</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6/fonts/remixicon.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="shortcut icon" href="assets/impram-logo.png" type="image/x-icon">
 </head>
 
 <body>
   <div class="d-flex" id="wrapper">
-    <!-- Sidebar -->
-    <div class="bg-success text-white p-4 " id="sidebar">
-      <h4 class="text-center">Sistema ERP Ficticio</h4>
-      <ul class="nav flex-column mt-4">
-        <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fas fa-home me-2"></i>Dashboard</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fas fa-user me-2"></i>Clientes</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fas fa-box me-2"></i>Produtos</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fas fa-chart-line me-2"></i>Vendas</a>
+    <div class="bg-green text-white py-5 px-4 sidebar">
+      <h4 class="text-center sidebar-header">Sistema ERP</h4>
+      <ul class="nav flex-column mt-3">
+        <li class="nav-item"><a class="nav-link text-white" href="">
+            <i class="bi bi-bar-chart-fill me-2"></i><span class="nav-text">Solicitação Saída Funcionarios</span></a>
         </li>
+        <li class="nav-item"><a class="nav-link text-white" href="">
+            <i class="bi bi-person-add me-2"></i><span class="nav-text">Saída de Funcionarios</span></a>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="">
+            <i class="bi bi-cash-coin me-2"></i><span class="nav-text">Solicitação Saída Veiculos</span></a>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="">
+            <i class="ri-building-2-line me-2"></i><span class="nav-text">Saida de Veiculos</span></a>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="">
+            <i class="bi bi-file-check-fill me-2"></i><span class="nav-text">Liberação Saída</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="">
+            <i class="bi bi-truck me-2"></i><span class="nav-text">SMG Gerenciador Manutenção</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="ri-shopping-cart-line me-2"></i><span class="nav-text">Manutenção Impram</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-boxes me-2"></i><span class="nav-text">Quadro Preventiva - IMPRAM</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="ri-hand-coin-line me-2"></i><span class="nav-text">OQC()</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="ri-team-line me-2"></i><span class="nav-text">Cadastro de Facas</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="ri-file-edit-line me-2"></i><span class="nav-text">Chaves</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Relatorio Defeito de Produtos</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Controles de Ações</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Corte e Vinco</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Grafico (Defeitos)</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Relatorio Componentes</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Seleção</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Descrição Cargo</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Descrição Funcionarios</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Relatorio Manutenção</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">GPD (Gerenciador P&D)</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Parametros CV</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Reposição de Facas</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">OS Pre-impressão</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">OS Comunicação</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">BNC Relatorio Sapiens</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">OS Manutenção Industrial</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Preventiva Manutenção</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">OS Manutenção Industrial Sapiens</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">BNC SGI</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">BNC Setores</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Passagem Portaria</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Relatorio Circulação</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">relatorio Porte</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Relatorio Atrasos</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">estacionamento Interno</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Entrada de Prestadores</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Entrada de Consultores</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Controle de Porte </span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Controle de Rotas</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Relatorio Portaria</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Instr. Operacional</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">PeD</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Terceiros</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Cadastro de Veiculos</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Painel de Produção</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Separação Almoxarifado</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Qualidade</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Integração de Terceiros</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">OS Manutenção</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Agenda</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Entraa de Visitantes</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Cargas</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Veiculos IMPRAM</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Funcionario em Atraso</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Saida de Funcionario</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">Cadastro de Usuarios</span></a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">
+            <i class="bi bi-person me-2"></i><span class="nav-text">trocar senhas</span></a></li>
       </ul>
     </div>
 
-    <!-- Page Content -->
-    <div class="container-fluid p-4" id="page-content">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="text-primary">Dashboard</h2>
-        <button class="btn btn-outline-primary"><i class="fas fa-user"></i> Usuário</button>
-      </div>
 
-      <!-- Cards -->
-      <div class="row mb-4">
-        <div class="col-md-4">
-          <div class="card text-white bg-primary mb-3">
-            <div class="card-body">
-              <h5 class="card-title">Vendas do Mês</h5>
-              <p class="card-text fs-3" id="vendasMes">R$ 12.400</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card text-white bg-success mb-3">
-            <div class="card-body">
-              <h5 class="card-title">Produtos em Estoque</h5>
-              <p class="card-text fs-3" id="produtosEstoque">134</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card text-white bg-danger mb-3">
-            <div class="card-body">
-              <h5 class="card-title">Clientes Inadimplentes</h5>
-              <p class="card-text fs-3" id="clientesInadimplentes">5</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Gráficos -->
-      <div class="row">
-        <div class="col-md-6">
-          <canvas id="graficoVendas"></canvas>
-        </div>
-        <div class="col-md-6">
-          <canvas id="graficoCaixa"></canvas>
-        </div>
-        <div class="card mb-4">
-          <div class="card-header bg-primary text-white">
-            <i class="fas fa-file-invoice me-2"></i>Últimos Pedidos
-          </div>
-          <div class="card-body p-0">
-            <table class="table table-striped mb-0">
-              <thead class="table-light">
-                <tr>
-                  <th>#</th>
-                  <th>Cliente</th>
-                  <th>Valor</th>
-                  <th>Status</th>
-                  <th>Data</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>#001</td>
-                  <td>João Silva</td>
-                  <td>R$ 350,00</td>
-                  <td><span class="badge bg-success">Pago</span></td>
-                  <td>08/07/2025</td>
-                </tr>
-                <tr>
-                  <td>#002</td>
-                  <td>Maria Souza</td>
-                  <td>R$ 500,00</td>
-                  <td><span class="badge bg-warning text-dark">Pendente</span></td>
-                  <td>08/07/2025</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
-
-
-  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/dashboard.js"></script>
 </body>
 
