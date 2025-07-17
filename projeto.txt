@@ -27,129 +27,137 @@ RH / Ponto / Folha
 Relatórios e Dashboard
 Usuários e Segurança
 
-1. Modulo de cadastro: 
-Entidades:
-Cliente
-Fornecedor
-Produto
-Funcionário
-Transportadora
-Forma de pagamento. 
+1. Módulo de Cadastro
+Entidades Personalizadas:
+Clientes (Pessoa Física ou Jurídica)
+Fornecedores (Papel, tinta, etc.)
+Produtos e Serviços (Ex: Cartão de visita, panfleto, banner)
+Funcionários
+Transportadoras
+Tipos de Acabamento (Corte, Verniz, Laminação, etc.)
+Formas de Pagamento
 
-Funcionalidades 
-Criar, editar, excluir e listar cadastros
+Funcionalidades
+CRUD completo
 Validação de CPF/CNPJ
-Endereços vinculados (CEP automático)
-Registro de data de criação/edição. 
+CEP automático via API
+Data de criação e edição
+Relacionar produtos com tipos de acabamento e tamanhos
 
-2. Módulo de Venda / Orçamentos 
-=> Selecionar cliente
-Adicionar produtos ao pedido (quantidade e valor)
-Calcular valor total e impostos
-Definir forma de pagamento
-Emitir orçamento ou pedido de venda
-Se aprovado:
-Atualiza estoque
-Lança contas a receber
-(opcional) Emite NF-e
-Atualiza status da venda (pendente, pago, cancelado) 
-
-Regras desse Módulo 
-Não permitir venda de produto com estoque insuficiente
-Desconto máximo permitido por perfil de usuário. 
-
-3. Módulo de Compras 
-Fluxo:
-Criar pedido de compra
-Selecionar fornecedor
-Adicionar produtos
-Aprovar pedido
-Entrada no estoque quando mercadoria chegar
-Gerar contas a pagar
+2. Módulo de Orçamentos e Produção
+Funcionalidades
+Seleção de cliente
+Configuração do produto (ex: tamanho, tipo de papel, cor, acabamento)
+Quantidade e prazos de entrega
+Cálculo automático de custo + margem de lucro
+Emissão do orçamento (PDF ou visualização online)
+Aprovação e conversão em pedido de produção.
 Regras:
-Histórico de compras por fornecedor
-Cotação automática (comparação de preços) 
+Impedir orçamentos com preços abaixo do custo
+Tempo de produção baseado na fila de máquinas
 
-4. 📦 Módulo de Estoque
-Funcionalidades:
-Entrada manual ou via compras
-Saída manual ou via vendas
-Transferência entre depósitos
-Inventário (ajuste de contagem física)
-Consulta rápida de saldo por produto
-Alertas:
-Estoque mínimo
-Produto vencido (para perecíveis)
-Movimentações recentes
-
-5. 💰 Módulo Financeiro
-Contas a Receber:
-Lançadas via módulo de vendas
-Controle de vencimentos, juros, desconto
-Registro de pagamento parcial ou total
-Geração de boleto (via API bancária)
-Contas a Pagar:
-Lançadas via módulo de compras ou manualmente
-Registro de pagamentos, comprovantes
-Fluxo de Caixa:
-Entradas e saídas do dia/mês
-Saldo previsto e realizado
+3. Módulo de Pedidos e Vendas
+Fluxo
+Pedido criado a partir do orçamento aprovado
+Acompanhamento por status: Produção, Acabamento, Pronto, Entregue
+Atualização de estoque de insumos
+Lançamento automático de contas a receber
+Impressão de comprovante/nota fiscal
 Regras
-Impedir pagamento com saldo insuficiente (opcional)
-Acesso restrito a usuários financeiros
+Não permitir pedido sem insumo disponível
+Controle de atrasos por cliente/projeto
 
-6. 👨‍💼 Módulo de RH / Funcionários
-Funcionalidades:
-Cadastro de funcionários
-Controle de ponto (manual ou digital)
-Geração de folha de pagamento (simulação)
-Férias, horas extras, faltas
-Regras:
-Cálculo de salário com base em jornada e adicionais
-Relatórios para contabilidade
+4. Módulo de Compras
+Fluxo
+Solicitação de compra (ex: papel couché, tinta CMYK)
+Aprovação da gerência
+Entrada de NF com atualização de estoque
+Histórico de cotações por fornecedor
+Registro de data de validade para insumos perecíveis
 
-7. 📈 Relatórios e Dashboard
-Dashboard inicial:
-Total de vendas no mês
-Produtos mais vendidos
-Clientes inadimplentes
-Gráficos de barras/pizza (ex: fluxo de caixa)
-Relatórios:
-Vendas por período
-Estoque atual
+5. Módulo de Estoque (Materiais Gráficos)
+Funcionalidades
+Entrada por compra ou ajuste
+Saída por produção ou baixa
+Controle por tipo de papel, formato, cor, bobina, etc.
+Alertas de insumos críticos
+Transferência entre setores (ex: pré-impressão → impressão)
+
+Alertas
+Estoque mínimo de papel ou tinta
+Validade vencida de solventes/vernizes
+
+6. Módulo Financeiro
+Contas a Receber
+Geradas a partir dos pedidos
+Controle de vencimento, descontos e juros
+Registro de pagamentos e inadimplência
+Contas a Pagar
+Lançamentos automáticos por compras ou manuais
+
+Anexos de comprovantes
+Integração com APIs bancárias (opcional)
+Fluxo de Caixa
+Visualização diária, semanal e mensal
+Comparativo entre previsto e realizado
+Regras
+Impedir pagamento com caixa negativo
+Permissões para relatórios sensíveis
+
+7. Módulo de RH / Funcionários
+Funcionalidades
+Cadastro de funcionários por setor (Design, Impressão, Acabamento, Entrega)
+Controle de ponto (via tela ou integração com relógio)
+Cálculo simulado de folha
+Controle de férias e horas extras
+
+8. Relatórios e Dashboard
+Dashboard Inicial
+Total de orçamentos e pedidos no mês
+Pedidos em produção
+Pedidos prontos aguardando retirada
+Gráficos de vendas por tipo de produto
+Comparativo de custos por mês
+Relatórios
+Orçamentos por cliente
+Estoque de insumos
 Contas vencidas
-Histórico de compras/vendas por cliente
-Ferramentas:
-Exportar para PDF, Excel
-Filtros por data, status, cliente
+Vendas por produto/serviço
+Fluxo de caixa
+Ferramentas
+Filtros por período, status, cliente
+Exportação: PDF / Excel
 
-8. 🔐 Módulo de Usuários e Permissões
-Funcionalidades:
+9. Módulo de Usuários e Permissões
+Funcionalidades
 Login com senha
-Perfis: admin, vendedor, financeiro, RH, etc.
-Controle de acesso a telas e funcionalidades
-Log de atividades (ações dos usuários)
-Regras:
-Vendedor não pode editar financeiro
-RH não pode acessar dados comerciais
+Perfis: Admin, Produção, Designer, Financeiro, Comercial
+Controle de permissões por módulo
+Log de ações por usuário
+Regra
+Funcionários da produção não visualizam finanças
+Designer pode acessar pedidos, mas não valores
 
-Fluxo entre Modulos
-1. Cadastro do cliente → 
-2. Cadastro do produto → 
-3. Venda é registrada → 
-4. Estoque é reduzido →
-5. Contas a receber são criadas →
-6. Cliente paga → 
-7. Caixa é atualizado →
-8. Dashboard mostra os indicadores
+Fluxo Entre Módulos (Adaptado para Gráfica)
+1. Cliente solicita orçamento →
+2. Orçamento configurado e aprovado →
+3. Gera pedido →
+4. Consome insumos do estoque →
+5. Produção inicia →
+6. Pedido finalizado e entregue →
+7. Conta a receber lançada →
+8. Cliente paga →
+9. Caixa atualizado →
+10. Indicadores visíveis no Dashboard
+
 
 REGRAS DE NEGÓCIO CRÍTICAS
-Regra	Descrição
-Estoque mínimo	Bloqueia venda se não houver saldo
-Cadastro duplicado	Impede CPF/CNPJ repetido
-Fluxo financeiro	Valor da venda precisa bater com entrada no caixa
-Permissões de acesso	Usuário só vê o que for autorizado
-Cálculo de impostos	Aplica impostos por produto ou cliente (simulado)
+insumo minimo: Bloqueia produção se não houver material
+Cadastro duplicado: Impede duplicação de cliente/fornecedor
+Fluxo financeiro coerente: Valor do pedido precisa bater com entrada
+Permissões por setor: Controle de visualização e ações
+Precificação mínima: 	Impede venda abaixo do custo
+Atraso de produção: Alertas e acompanhamento por status
 
 
 Link de Inspiração
