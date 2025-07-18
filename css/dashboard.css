@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-html,*{
+html,
+* {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
@@ -33,19 +34,23 @@ li a {
   text-decoration: none;
   color: inherit;
 }
-li a:hover{
+
+li a:hover {
   transition: 0.3s background-color;
   background-color: #048b2f;
 }
-.nav-item{
+
+.nav-item {
   margin-bottom: 1rem;
 }
-.sidebar{
+
+.sidebar {
   overflow-y: auto;
 }
-.bg-green-header{
+
+.bg-green-header {
   background-color: #048b2f;
-  width: 1000px;
+  width: 1440px;
   height: 90px;
 }
 .user-exit{
