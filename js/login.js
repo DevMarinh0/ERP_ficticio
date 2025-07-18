@@ -4,7 +4,6 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
       const usuario = document.getElementById("usuario").value;
       const senha = document.getElementById("senha").value;
 
-      // Simulação de login (substitua pela chamada à API Delphi futuramente)
       if (usuario === "admin" && senha === "123") {
         Swal.fire({
           icon: "success",
