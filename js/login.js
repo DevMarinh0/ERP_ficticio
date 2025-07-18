@@ -4,6 +4,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
       const usuario = document.getElementById("usuario").value;
       const senha = document.getElementById("senha").value;
 
+      // sweet Alert.js
       if (usuario === "admin" && senha === "123") {
         Swal.fire({
           icon: "success",
