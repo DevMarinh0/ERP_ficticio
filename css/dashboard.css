@@ -11,6 +11,7 @@ html,
   flex-direction: row;
   height: 100vh;
   overflow: hidden;
+  padding-left: 410px;
 }
 
 #page-content {
@@ -47,11 +48,14 @@ li a:hover {
 }
 
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
   min-width: 350px;
-  max-width: 450px;
   width: 30vw;
   height: 100vh;
   overflow-y: auto;
+  z-index: 1000;
 }
 
 .bg-green-header {
@@ -59,10 +63,6 @@ li a:hover {
   width: 100%;
   max-width: 3840px;
   height: 90px;
-  min-height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .user-exit{
   padding: 0;
@@ -73,6 +73,8 @@ li a:hover {
   width: 100%;
   box-sizing: border-box;
 }
+
+
 
 /* @media (min-width: 2560px) {
   .sidebar {
@@ -163,8 +165,7 @@ li a:hover {
   }
 }  */ 
 canvas {
-  max-width: 100%;
-  height: auto;
+  max-width: 900px;
+  height: 200px;
   display: block;
-  margin: 0 auto;
 }
