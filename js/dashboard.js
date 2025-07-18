@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     const ctx1 = document.getElementById('chartExemplo1').getContext('2d');
     const ctx2 = document.getElementById('chartExemplo2').getContext('2d');
     const ctx3 = document.getElementById('chartExemplo3').getContext('2d');
@@ -7,19 +7,18 @@ window.onload = function() {
     new Chart(ctx1, {
         type: 'bar',
         data: {
-            labels: ['Vermelho', 'Azul', 'Amarelo', 'Verde', 'Roxo', 'Laranja'],
+            labels: ['Ciano', 'Verde', 'Magenta', 'Amarelo', 'Preto'],
             datasets: [{
                 label: 'Exemplo Dados',
-                data: [10, 9, 8, 7, 6, 5],
+                data: [10, 9, 8, 7, 6,],
                 backgroundColor: [
-                    'red',
-                    'blue',
-                    'yellow',
+                    'cyan',
                     'green',
-                    'purple',
-                    'orange'
+                    'magenta',
+                    'yellow',
+                    'black'
                 ],
-                
+
                 borderWidth: 1
             }]
         },
@@ -35,19 +34,18 @@ window.onload = function() {
     new Chart(ctx2, {
         type: 'bar',
         data: {
-            labels: ['Vermelho', 'Azul', 'Amarelo', 'Verde', 'Roxo', 'Laranja'],
+            labels: ['Ciano', 'Verde', 'Magenta', 'Amarelo', 'Preto'],
             datasets: [{
                 label: 'Exemplo Dados',
-                data: [12, 19, 3, 5, 2, 3],
+                data: [10, 9, 8, 7, 6,],
                 backgroundColor: [
-                    'red',
-                    'blue',
-                    'yellow',
+                    'cyan',
                     'green',
-                    'purple',
-                    'orange'
+                    'magenta',
+                    'yellow',
+                    'black'
                 ],
-                
+
                 borderWidth: 1
             }]
         },
@@ -63,19 +61,18 @@ window.onload = function() {
     new Chart(ctx3, {
         type: 'bar',
         data: {
-            labels: ['Vermelho', 'Azul', 'Amarelo', 'Verde', 'Roxo', 'Laranja'],
+            labels: ['Ciano', 'Verde', 'Magenta', 'Amarelo', 'Preto'],
             datasets: [{
                 label: 'Exemplo Dados',
-                data: [12, 19, 3, 5, 2, 3],
+                data: [10, 9, 8, 7, 6,],
                 backgroundColor: [
-                    'red',
-                    'blue',
-                    'yellow',
+                    'cyan',
                     'green',
-                    'purple',
-                    'orange'
+                    'magenta',
+                    'yellow',
+                    'black'
                 ],
-                
+
                 borderWidth: 1
             }]
         },
@@ -91,19 +88,18 @@ window.onload = function() {
     new Chart(ctx4, {
         type: 'bar',
         data: {
-            labels: ['Vermelho', 'Azul', 'Amarelo', 'Verde', 'Roxo', 'Laranja'],
+            labels: ['Ciano', 'Verde', 'Magenta', 'Amarelo', 'Preto'],
             datasets: [{
                 label: 'Exemplo Dados',
-                data: [12, 19, 3, 5, 2, 3],
+                data: [10, 9, 8, 7, 6,],
                 backgroundColor: [
-                    'red',
-                    'blue',
-                    'yellow',
+                    'cyan',
                     'green',
-                    'purple',
-                    'orange'
+                    'magenta',
+                    'yellow',
+                    'black'
                 ],
-                
+
                 borderWidth: 1
             }]
         },
@@ -119,19 +115,18 @@ window.onload = function() {
     new Chart(ctx5, {
         type: 'bar',
         data: {
-            labels: ['Vermelho', 'Azul', 'Amarelo', 'Verde', 'Roxo', 'Laranja'],
+            labels: ['Ciano', 'Verde', 'Magenta', 'Amarelo', 'Preto'],
             datasets: [{
                 label: 'Exemplo Dados',
-                data: [12, 19, 3, 5, 2, 3],
+                data: [10, 9, 8, 7, 6,],
                 backgroundColor: [
-                    'red',
-                    'blue',
-                    'yellow',
+                    'cyan',
                     'green',
-                    'purple',
-                    'orange'
+                    'magenta',
+                    'yellow',
+                    'black'
                 ],
-                
+
                 borderWidth: 1
             }]
         },
