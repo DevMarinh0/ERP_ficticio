@@ -1,16 +1,14 @@
-Projeto Mini ERP ou ERP Completo Utilizando Tecnologias Modernas junto com PHP
+Projeto ERP(SAP) ou ERP(SAP) 
 
 -Tecnologias-
 
-Front-End: HTML CSS e Javascript 
-Bibliotecas Front end Pra ERP: Graficos: Chart.js, Axios 
-Estilo: Bootstrap 5 
-Mascara de Input: Cleave.js
+Front-End: HTML CSS e Javascript Utilizando
+Bibliotecas Front end Pra ERP: Graficos: Chart.js Utilizando
+Estilo: Bootstrap 5 Utilizando
+Mascara de Input: Cleave.js 
 Data e Hora: Day.js
-tabelas Dinamicas: Datatables.js
+tabelas Dinamicas: Datatables.js Utilizando
 back end : PHP, e tbm para fazer Conexao com o SQL server
-
-Testes APi: Postman ou Insomnia
 
 Banco de dados Local: SQL Server 
 
