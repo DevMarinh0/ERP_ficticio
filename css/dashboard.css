@@ -48,3 +48,7 @@ li a:hover{
   width: 1000px;
   height: 90px;
 }
+.user-exit{
+  text-decoration: none;
+  color: inherit;
+}
