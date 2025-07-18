@@ -50,10 +50,10 @@ li a:hover {
 
 .bg-green-header {
   background-color: #048b2f;
-  width: 1400px;
+  width: 1200px;
   height: 90px;
 }
 .user-exit{
-  text-decoration: none;
-  color: inherit;
+  padding: 0;
+  margin: 0;
 }
