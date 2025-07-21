@@ -2,12 +2,14 @@ import { saidaFuncionarios } from './saidaFuncionarios.js';
 import { solicitacaoSaidaFuncionarios } from './solicitacaoSaidaFuncionarios.js';
 import { solicitacaoSaidaVeiculos } from './solicitacaoSaidaVeiculos.js';
 import { saidaVeiculos } from './saidaVeiculos.js';
+import { liberacaoSaida} from './liberacaoSaida.js';
 
 const conteudos  = {
     ...saidaFuncionarios,
     ...solicitacaoSaidaFuncionarios,
     ...solicitacaoSaidaVeiculos,
     ...saidaVeiculos,
+    ...liberacaoSaida
 };
 
 document.querySelectorAll('.sidebar .nav-link').forEach(function (link) {
@@ -28,6 +30,9 @@ document.querySelectorAll('.sidebar .nav-link').forEach(function (link) {
         }
         if( document.getElementById('tabelaSaidaVeiculos')) {
             $('#tabelaSaidaVeiculos').DataTable();
+        }
+        if( document.getElementById('tabelaLiberacaoSaida')) {
+            $('#liberacaoSaida').DataTable();
         }
     });
 });
