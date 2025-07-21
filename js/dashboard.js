@@ -148,74 +148,271 @@ window.onload = function () {
             <button class="fw-bold btn btn-outline-warning btn-md my-2">Atualizar</button>
             <button class="fw-bold btn btn-outline-success btn-md my-2 pl-3">Novo</button>
         </div>
-        <table id="tabelaSaidaFunc" class="table table-dark table-striped display" style="width:900px">
-            <thead>
+        <div class="table-responsive">
+            <table id="tabelaSaidaFunc" class="table table-striped display mt-3" style="width:900px">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Foto</th>
+                        <th>Matrícula</th>
+                        <th>Nome</th>
+                        <th>Destino</th>
+                        <th>Data</th>
+                        <th>Autorização</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
+                        <td>2352</td>
+                        <td>João Silva</td>
+                        <td>Setor A <br></td> 
+                        <td>18/07/2025</td>
+                        <td>Aprovado</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
+                        <td>123123</td>
+                        <td>Maria Souza</td>
+                        <td>Setor B</td>
+                        <td>18/07/2025</td>
+                        <td>Pendente</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
+                        <td>12312</td>
+                        <td>João Silva</td>
+                        <td>Setor A</td>
+                        <td>18/07/2025</td>
+                        <td>Aprovado</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
+                        <td>324234</td>
+                        <td>Maria Souza</td>
+                        <td>Setor B</td>
+                        <td>18/07/2025</td>
+                        <td>Pendente</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
+                        <td>2342342</td>
+                        <td>João Silva</td>
+                        <td>Setor A</td>
+                        <td>18/07/2025</td>
+                        <td>Aprovado</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
+                        <td>67890</td>
+                        <td>Maria Souza</td>
+                        <td>Setor B</td>
+                        <td>18/07/2025</td>
+                        <td>Pendente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        `,
+        "saida-funcionarios": `
+        <h1 class="text-center fs-2 fw-bold">Saída de Funcionários</h1>
+        <div class="text-center">
+            <button class="fw-bold btn btn-outline-warning btn-md my-2">Atualizar</button>
+            <button class="fw-bold btn btn-outline-success btn-md my-2 pl-3">Novo</button>
+        </div>
+        <div class="table-responsive">
+        <table id="tabelaSaidaFuncionarios" class="table table-striped display mt-3" style="width:900px">
+            <thead class="table-dark">
                 <tr>
                     <th>Foto</th>
                     <th>Matrícula</th>
                     <th>Nome</th>
-                    <th>Destino</th>
-                    <th>Data</th>
+                    <th>Observação</th>
                     <th>Autorização</th>
+                    <th>Saida</th>
+                    <th>Retorno</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
-                    <td>2352</td>
-                    <td>João Silva</td>
-                    <td>Setor A <br></td> 
-                    <td>18/07/2025</td>
-                    <td>Aprovado</td>
+                    <td>98765</td>
+                    <td>Pedro Lima</td>
+                    <td>SLA</td>
+                    <td>SLA 2</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
                 </tr>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
-                    <td>123123</td>
-                    <td>Maria Souza</td>
-                    <td>Setor B</td>
-                    <td>18/07/2025</td>
-                    <td>Pendente</td>
+                    <td>98765</td>
+                    <td>Pedro Lima</td>
+                    <td>SLA</td>
+                    <td>SLA 2</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
                 </tr>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
-                    <td>12312</td>
-                    <td>João Silva</td>
-                    <td>Setor A</td>
-                    <td>18/07/2025</td>
-                    <td>Aprovado</td>
+                    <td>98765</td>
+                    <td>Pedro Lima</td>
+                    <td>SLA</td>
+                    <td>SLA 2</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
                 </tr>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
-                    <td>324234</td>
-                    <td>Maria Souza</td>
-                    <td>Setor B</td>
-                    <td>18/07/2025</td>
-                    <td>Pendente</td>
+                    <td>98765</td>
+                    <td>Pedro Lima</td>
+                    <td>SLA</td>
+                    <td>SLA 2</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
                 </tr>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
-                    <td>2342342</td>
-                    <td>João Silva</td>
-                    <td>Setor A</td>
-                    <td>18/07/2025</td>
-                    <td>Aprovado</td>
+                    <td>98765</td>
+                    <td>Pedro Lima</td>
+                    <td>SLA</td>
+                    <td>SLA 2</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
                 </tr>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
-                    <td>67890</td>
-                    <td>Maria Souza</td>
-                    <td>Setor B</td>
-                    <td>18/07/2025</td>
-                    <td>Pendente</td>
+                    <td>98765</td>
+                    <td>Pedro Lima</td>
+                    <td>SLA</td>
+                    <td>SLA 2</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
+                    <td>98765</td>
+                    <td>Pedro Lima</td>
+                    <td>SLA</td>
+                    <td>SLA 2</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
                 </tr>
             </tbody>
         </table>
+        </div>
         `,
-        "Saída de Funcionários": `
-            <h1 class="text-center fs-1 fw-bold">Saída de Funcionários</h1>
-            <p>Conteúdo relacionado à saída de funcionários.</p>
+        "solicitacao-saida-veiculos":`
+        <h1 class="text-center fs-2 fw-bold">Solicitação Saida Veiculos</h1>
+        <div class="text-center">
+            <button class="fw-bold btn btn-outline-warning btn-md my-2">Atualizar</button>
+            <button class="fw-bold btn btn-outline-success btn-md my-2 pl-3">Novo</button>
+        </div>
+
+        <div class="table-responsive">
+        <table id="tabelaSaidaFuncionarios" class="table table-striped display mt-3" style="width:900px">
+            <thead class="table-dark">
+                <tr>
+                    <th>Placa</th>
+                    <th>Carro</th>
+                    <th>Motorista</th>
+                    <th>Destino</th>
+                    <th>KM inicial</th>
+                    <th>Solicitante</th>
+                    <th>Autorizado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ABC-1234</td>
+                    <td>Prisma Prata</td>
+                    <td>497 - André Luiz de Alencar Macedo</td>
+                    <td>Novotel</td>
+                    <td>102024</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
+                </tr>
+                <tr>
+                    <td>ABC-1234</td>
+                    <td>Prisma Prata</td>
+                    <td>497 - André Luiz de Alencar Macedo</td>
+                    <td>Novotel</td>
+                    <td>102024</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
+                </tr>
+                <tr>
+                    <td>ABC-1234</td>
+                    <td>Prisma Prata</td>
+                    <td>497 - André Luiz de Alencar Macedo</td>
+                    <td>Novotel</td>
+                    <td>102024</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
+                </tr>
+                <tr>
+                    <td>ABC-1234</td>
+                    <td>Prisma Prata</td>
+                    <td>497 - André Luiz de Alencar Macedo</td>
+                    <td>Novotel</td>
+                    <td>102024</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
+                </tr>
+                <tr>
+                    <td>ABC-1234</td>
+                    <td>Prisma Prata</td>
+                    <td>497 - André Luiz de Alencar Macedo</td>
+                    <td>Novotel</td>
+                    <td>102024</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
+                </tr>
+                <tr>
+                    <td>ABC-1234</td>
+                    <td>Prisma Prata</td>
+                    <td>497 - André Luiz de Alencar Macedo</td>
+                    <td>Novotel</td>
+                    <td>102024</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
+                </tr>
+                <tr>
+                    <td>ABC-1234</td>
+                    <td>Prisma Prata</td>
+                    <td>497 - André Luiz de Alencar Macedo</td>
+                    <td>Novotel</td>
+                    <td>102024</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
+                </tr>
+                <tr>
+                    <td>ABC-1234</td>
+                    <td>Prisma Prata</td>
+                    <td>497 - André Luiz de Alencar Macedo</td>
+                    <td>Novotel</td>
+                    <td>102024</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
+                </tr>
+                <tr>
+                    <td>ABC-1234</td>
+                    <td>Prisma Prata</td>
+                    <td>497 - André Luiz de Alencar Macedo</td>
+                    <td>Novotel</td>
+                    <td>102024</td>
+                    <td>21/07/2025</td>
+                    <td>22/07/2025</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
         `,
-        // Adicione outros conteúdos conforme necessário
+        "saida-veiculos": `
+        <h1 class="text-center fs-2 fw-bold">Solicitação Saida Veiculos</h1>
+        <div class="text-center">
+            <button class="fw-bold btn btn-outline-warning btn-md my-2">Atualizar</button>
+            <button class="fw-bold btn btn-outline-success btn-md my-2 pl-3">Novo</button>
+        </div>
+        `
     };
 
     document.querySelectorAll('.sidebar .nav-link').forEach(function (link) {
@@ -230,6 +427,11 @@ window.onload = function () {
                     $('#tabelaSaidaFunc').DataTable();
                 });
             }
+            if( document.getElementById('tabelaSaidaFuncionarios')) {
+                $(document).ready(function () {
+                    $('#tabelaSaidaFuncionarios').DataTable();
+                });
+            }
         });
     });
-};
+}
