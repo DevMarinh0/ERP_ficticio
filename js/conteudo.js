@@ -3,13 +3,15 @@ import { solicitacaoSaidaFuncionarios } from './solicitacaoSaidaFuncionarios.js'
 import { solicitacaoSaidaVeiculos } from './solicitacaoSaidaVeiculos.js';
 import { saidaVeiculos } from './saidaVeiculos.js';
 import { liberacaoSaida} from './liberacaoSaida.js';
+import { sgmGerenciadorManutencao } from './sgmGerenciadorManutencao.js';
 
 const conteudos  = {
     ...saidaFuncionarios,
     ...solicitacaoSaidaFuncionarios,
     ...solicitacaoSaidaVeiculos,
     ...saidaVeiculos,
-    ...liberacaoSaida
+    ...liberacaoSaida,
+    ...sgmGerenciadorManutencao
 };
 
 document.querySelectorAll('.sidebar .nav-link').forEach(function (link) {
@@ -32,7 +34,10 @@ document.querySelectorAll('.sidebar .nav-link').forEach(function (link) {
             $('#tabelaSaidaVeiculos').DataTable();
         }
         if( document.getElementById('tabelaLiberacaoSaida')) {
-            $('#liberacaoSaida').DataTable();
+            $('#tabelaLiberacaoSaida').DataTable();
+        }
+        if( document.getElementById('tabelaSgmGerenciadorManutencao')) {
+            $('#tabelaSgmGerenciadorManutencao').DataTable();
         }
     });
 });
