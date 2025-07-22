@@ -4,7 +4,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
       const usuario = document.getElementById("usuario").value;
       const senha = document.getElementById("senha").value;
 
-      // sweet Alert.js
+      // SweetAlert para feedback do login
       if (usuario === "admin" && senha === "123") {
         Swal.fire({
           icon: "success",
@@ -13,7 +13,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
           timer: 1700,
           showConfirmButton: false
         }).then(() => {
-          window.location.href = "../dashboard.html"; // Redireciona após o login
+          window.location.href = "../index.html"; // Redireciona após o login
         });
       } else {
         Swal.fire({

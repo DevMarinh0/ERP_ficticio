@@ -6,6 +6,8 @@ window.onload = function () {
     const ctx5 = document.getElementById('chartExemplo5').getContext('2d');
     const ctx6 = document.getElementById('chartExemplo6').getContext('2d');
     const ctx7 = document.getElementById('chartExemplo7').getContext('2d');
+    const ctx8 = document.getElementById('chartExemplo8').getContext('2d');
+    
     new Chart(ctx1, {
         type: 'bar',
         data: {
@@ -160,7 +162,6 @@ window.onload = function () {
                     'yellow',
                     'black'
                 ],
-
                 borderWidth: 1
             }]
         },
@@ -214,13 +215,13 @@ window.onload = function () {
             },
         }
     });
-    new Chart(ctx7, {
-        type: 'polarArea',
+    new Chart(ctx8, {
+        type: 'pie',
         data: {
-            labels: ['Ciano', 'Verde', 'Magenta', 'Amarelo', 'Preto'],
+            labels: ['Vermelho', 'Azul', 'Amarelo', 'Verde', 'Roxo'],
             datasets: [{
                 label: 'Exemplo Dados',
-                data: [10, 9, 8, 7, 6,],
+                data: [10, 20, 30, 40, 50],
                 backgroundColor: [
                     'cyan',
                     'green',
@@ -235,8 +236,37 @@ window.onload = function () {
         options: {
             responsive: true,
             scales: {
-                y: {
-                    beginAtZero: true
+                x: {
+                    type: 'linear',
+                    position: 'bottom',
+                }
+            }
+        }
+    });
+    new Chart(ctx7, {
+        type: 'doughnut',
+        data: {
+            labels: ['Vermelho', 'Azul', 'Amarelo', 'Verde', 'Roxo'],
+            datasets: [{
+                label: 'Exemplo Dados',
+                data: [10, 20, 30, 40, 50],
+                backgroundColor: [
+                    'cyan',
+                    'green',
+                    'magenta',
+                    'yellow',
+                    'black'
+                ],
+
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                x: {
+                    type: 'linear',
+                    position: 'bottom',
                 }
             }
         }
