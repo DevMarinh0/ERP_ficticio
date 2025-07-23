@@ -2,8 +2,7 @@ export const saidaFuncionarios = {
     "saida-funcionarios": `
         <h1 class="text-center fs-2 fw-bold">Saída de Funcionários</h1>
         <div class="text-center">
-            <button class="fw-bold btn btn-outline-warning btn-md my-2">Atualizar</button>
-            <button class="fw-bold btn btn-outline-success btn-md my-2 pl-3">Novo</button>
+            <button class="fw-bold btn btn-outline-primary btn-md my-2">Atualizar</button>
         </div>
         <div class="row mb-3">
             <div class="col-md-6 mb-2">

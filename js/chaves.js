@@ -3,7 +3,7 @@ export const dadosChaves = {
         <h1 class="text-center fs-2 fw-bold">Chaves</h1>
         <div class="text-center">
             <button class="fw-bold btn btn-outline-primary btn-md my-2">Buscar</button>
-            <button class="fw-bold btn btn-outline-success btn-md my-2 pl-3">Novo</button>
+            <button class="fw-bold btn btn-outline-info btn-md my-2 pl-3">Novo</button>
         </div>
         <div class="row mb-3">
             <div class="col-md-6 mb-2">
@@ -35,6 +35,7 @@ export const dadosChaves = {
                     <td>Refeitorio</td>
                     <td>Entregue para o SR. Carlos</td>
                     <td>22/07/2025</td>
+                    <td style="background-color:red;"></td>
                 </tr>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
@@ -43,7 +44,7 @@ export const dadosChaves = {
                     <td>Refeitorio</td>
                     <td>Entregue para o SR. Carlos</td>
                     <td>22/07/2025</td>
-                    <td style="color:200px "></td> 
+                    <td style="background-color:red;"></td> 
                 </tr>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
@@ -52,6 +53,7 @@ export const dadosChaves = {
                     <td>Refeitorio</td>
                     <td>Entregue para o SR. Carlos</td>
                     <td>22/07/2025</td>
+                    <td style="background-color:red;"></td>
                 </tr>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
@@ -60,6 +62,7 @@ export const dadosChaves = {
                     <td>Refeitorio</td>
                     <td>Entregue para o SR. Carlos</td>
                     <td>22/07/2025</td>
+                    <td style="background-color:red;"></td>
                 </tr>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
@@ -68,6 +71,7 @@ export const dadosChaves = {
                     <td>Refeitorio</td>
                     <td>Entregue para o SR. Carlos</td>
                     <td>22/07/2025</td>
+                    <td style="background-color:red;"></td>
                 </tr>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
@@ -76,6 +80,7 @@ export const dadosChaves = {
                     <td>Refeitorio</td>
                     <td>Entregue para o SR. Carlos</td>
                     <td>22/07/2025</td>
+                    <td style="background-color:red;"></td>
                 </tr>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
@@ -84,6 +89,7 @@ export const dadosChaves = {
                     <td>Refeitorio</td>
                     <td>Entregue para o SR. Carlos</td>
                     <td>22/07/2025</td>
+                    <td style="background-color:red;"></td>
                 </tr>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
@@ -92,6 +98,7 @@ export const dadosChaves = {
                     <td>Refeitorio</td>
                     <td>Entregue para o SR. Carlos</td>
                     <td>22/07/2025</td>
+                    <td style="background-color:red;"></td>
                 </tr>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
@@ -100,6 +107,7 @@ export const dadosChaves = {
                     <td>Refeitorio</td>
                     <td>Entregue para o SR. Carlos</td>
                     <td>22/07/2025</td>
+                    <td style="background-color:red;"></td>
                 </tr>
                 <tr>
                     <td><img src="/assets/impram-logo.png" alt="Foto Funcionario" width="50" height="50"></td>
@@ -108,6 +116,7 @@ export const dadosChaves = {
                     <td>Refeitorio</td>
                     <td>Entregue para o SR. Carlos</td>
                     <td>22/07/2025</td>
+                    <td style="background-color:red;"></td>
                 </tr>
             </tbody>
         </table>

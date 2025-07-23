@@ -2,7 +2,7 @@ export const sgmGerenciadorManutencao = {
     "sgm-gerenciamento-manutencao": `
     <h1 class="text-center fs-2 fw-bold">SGM Gerenciador Manutenção</h1>
         <div class="text-center">
-            <button class="fw-bold btn btn-outline-primary btn-md my-2">Buscar</button>
+            <button class="fw-bold btn btn-outline-info btn-md my-2">Buscar</button>
             <button class="fw-bold btn btn-outline-success btn-md my-2 pl-3">Novo</button>
         </div>
     <div class="row g-2 mb-3 mt-1">

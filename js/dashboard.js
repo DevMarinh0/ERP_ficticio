@@ -215,7 +215,7 @@ window.onload = function () {
             },
         }
     });
-    new Chart(ctx8, {
+    new Chart(ctx7, {
         type: 'pie',
         data: {
             labels: ['Vermelho', 'Azul', 'Amarelo', 'Verde', 'Roxo'],
@@ -243,7 +243,7 @@ window.onload = function () {
             }
         }
     });
-    new Chart(ctx7, {
+    new Chart(ctx8, {
         type: 'doughnut',
         data: {
             labels: ['Vermelho', 'Azul', 'Amarelo', 'Verde', 'Roxo'],
