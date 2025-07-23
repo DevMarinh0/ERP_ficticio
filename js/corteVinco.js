@@ -5,7 +5,7 @@ export const corteVinco = {
         <button class="fw-bold btn btn-outline-info btn-md my-2">Buscar</button>
         <button class="fw-bold btn btn-outline-success btn-md my-2 pl-3">Novo</button>
     </div>
-    <div class="row mb-3">
+    <div class="row mb-3 pt-3">
         <div class="col-md-6 mb-2">
             <select class="form-select">
                 <option selected>Clientes</option>

@@ -1,9 +1,9 @@
 export const solicitacaoSaidaFuncionarios = {
     "solicitacao-saida-funcionarios": `
         <h1 class="text-center fs-2 fw-bold">Solicitação Saída de Funcionarios</h1>
-        <div class="text-center">
-            <button class="fw-bold btn btn-outline-primary btn-md my-2">Atualizar</button>
-            <button class="fw-bold btn btn-outline-success btn-md my-2 pl-3">Novo</button>
+        <div class="text-center grid grid-cols-2 gap-2">
+            <button class="fw-bold btn btn-outline-primary btn-md my-2 ">Atualizar</button>
+            <button class="fw-bold btn btn-outline-success btn-md my-2 ">Novo</button>
         </div>
         </div>
         <div class="table-responsive">

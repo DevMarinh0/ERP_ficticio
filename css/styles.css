@@ -74,3 +74,9 @@ canvas {
   height: 200px;
   display: block;
 }
+#empresaRelatoriosManutencaoEmpresa{
+  width: 350px;
+}
+#empresaRelatoriosManutencaoTipo{
+  width: 350px;
+}

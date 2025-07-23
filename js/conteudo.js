@@ -11,6 +11,8 @@ import { controleAcoes } from './controleAcoes.js';
 import { corteVinco } from './corteVinco.js';
 import { graficosDefeitos } from './graficosDefeitos.js';
 import { relatoriosComponentes } from './relatoriosComponentes.js';
+import { selecao } from './selecao.js';
+import { relatorioManutencao } from './relatorioManutencao.js';
 
 const conteudos = {
     ...saidaFuncionarios,
@@ -26,6 +28,8 @@ const conteudos = {
     ...corteVinco,
     ...graficosDefeitos,
     ...relatoriosComponentes,
+    ...selecao,
+    ...relatorioManutencao,
 };
 
 
@@ -73,9 +77,22 @@ document.querySelectorAll('.sidebar .nav-link').forEach(function (link) {
         if (document.getElementById('tabelaGraficosDefeitos')) {
             $('#tabelaGraficosDefeitos').DataTable();
         }
-        if( document.getElementById('tabelaRelatoriosComponentes')) {
+        if (document.getElementById('tabelaRelatoriosComponentes')) {
             $('#tabelaRelatoriosComponentes').DataTable();
         }
+        if (document.getElementById('tabelaSelecao')) {
+            $('#tabelaSelecao').DataTable();
+        }
+        if (document.getElementById('tabelaRelatorioManutencao')) {
+            $('#tabelaRelatorioManutencao').DataTable();
+        }
+
+
+
+
+
+
+
         if (chave === "graficos-defeitos") {
             const btn = document.getElementById('btnGerarGraficoDefeitos');
             if (btn) {
