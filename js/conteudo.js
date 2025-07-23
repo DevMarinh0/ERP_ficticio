@@ -13,6 +13,7 @@ import { graficosDefeitos } from './graficosDefeitos.js';
 import { relatoriosComponentes } from './relatoriosComponentes.js';
 import { selecao } from './selecao.js';
 import { relatorioManutencao } from './relatorioManutencao.js';
+import { gpdGerenciadorPed } from './gpdGerenciadorPd.js';
 
 const conteudos = {
     ...saidaFuncionarios,
@@ -30,6 +31,7 @@ const conteudos = {
     ...relatoriosComponentes,
     ...selecao,
     ...relatorioManutencao,
+    ...gpdGerenciadorPed,
 };
 
 
@@ -85,6 +87,9 @@ document.querySelectorAll('.sidebar .nav-link').forEach(function (link) {
         }
         if (document.getElementById('tabelaRelatorioManutencao')) {
             $('#tabelaRelatorioManutencao').DataTable();
+        }
+        if( document.getElementById('tabelaGpdGerenciadorPed')) {
+            $('#tabelaGpdGerenciadorPed').DataTable();
         }
 
 

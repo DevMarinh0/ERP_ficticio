@@ -22,7 +22,7 @@ export const selecao ={
                 </select>
             </div>
         </div>
-        <table id="tabelaSolicitacaoSaidaFuncionarios" class="table table-striped display mt-3" style="width:900px;">
+        <table id="tabelaSelecao" class="table table-striped display mt-3" style="width:900px;">
             <thead class="table-dark">
                 <tr>
                     <th>ID</th>
