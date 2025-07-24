@@ -80,3 +80,20 @@ canvas {
 #empresaRelatoriosManutencaoTipo{
   width: 350px;
 }
+#buscarPaiFaca{
+  width: 550px;
+}
+.table{
+  font-size: 0.9rem;
+}
+td{
+  cursor: pointer;
+  text-align: center;
+}
+th{
+  text-align: center;
+  font-weight: bold;
+}
+#inputProdutoCliente{
+  height: 300px;
+}

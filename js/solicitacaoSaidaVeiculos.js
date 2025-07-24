@@ -16,8 +16,8 @@ export const solicitacaoSaidaVeiculos = {
         </div>
         </div>
         <div class="table-responsive">
-        <table id="tabelaSolicitacaoSaidaVeiculos" class="table table-striped display mt-3" style="width:900px">
-            <thead class="table-dark">
+        <table id="tabelaSolicitacaoSaidaVeiculos" class="table table-hover table-dark">
+            <thead>
                 <tr>
                     <th>Placa</th>
                     <th>Carro</th>

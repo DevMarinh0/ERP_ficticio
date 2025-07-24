@@ -6,7 +6,7 @@ export const dadosCadastroFacas = {
             <button class="fw-bold btn btn-outline-info btn-md my-2 pl-3">Buscar</button>
         </div>
         <input type="text" class="form-control my-3" placeholder="Pesquisar por Faca">
-        <table id="tabelaCadastrofacas" class="table table-striped display mt-3" style="width:900px">
+        <table id="tabelaCadastrofacas" class="table table-hover table-dark mt-3">
             <thead class="table-dark">
                 <tr>
                     <th>faca</th>

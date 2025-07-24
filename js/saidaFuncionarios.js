@@ -15,7 +15,7 @@ export const saidaFuncionarios = {
             </div>
         </div>
         <div class="table-responsive">
-        <table id="tabelaSaidaFuncionarios" class="table table-striped display mt-3" style="width:900px;">
+        <table id="tabelaSaidaFuncionarios" class="table table-hover table-dark mt-3" >
             <thead class="table-dark">
                 <tr>
                     <th>Foto</th>

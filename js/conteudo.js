@@ -13,7 +13,10 @@ import { graficosDefeitos } from './graficosDefeitos.js';
 import { relatoriosComponentes } from './relatoriosComponentes.js';
 import { selecao } from './selecao.js';
 import { relatorioManutencao } from './relatorioManutencao.js';
-import { gpdGerenciadorPed } from './gpdGerenciadorPd.js';
+import { gpdGerenciadorPd } from './gpdGerenciadorPd.js';
+import { parametrosCv } from './parametrosCv.js';
+import { reposicaoFacas } from './recopicaoFacas.js';
+import { osPreimpressao } from './osPreimpressao.js';
 
 const conteudos = {
     ...saidaFuncionarios,
@@ -31,7 +34,10 @@ const conteudos = {
     ...relatoriosComponentes,
     ...selecao,
     ...relatorioManutencao,
-    ...gpdGerenciadorPed,
+    ...gpdGerenciadorPd,
+    ...parametrosCv,
+    ...reposicaoFacas,
+    ...osPreimpressao,
 };
 
 
@@ -88,16 +94,18 @@ document.querySelectorAll('.sidebar .nav-link').forEach(function (link) {
         if (document.getElementById('tabelaRelatorioManutencao')) {
             $('#tabelaRelatorioManutencao').DataTable();
         }
-        if( document.getElementById('tabelaGpdGerenciadorPed')) {
+        if (document.getElementById('tabelaGpdGerenciadorPed')) {
             $('#tabelaGpdGerenciadorPed').DataTable();
         }
-
-
-
-
-
-
-
+        if (document.getElementById('tabelaParametrosCv')) {
+            $('#tabelaParametrosCv').DataTable();
+        }
+        if (document.getElementById('tabelaReposicaoFacas')) {
+            $('#tabelaReposicaoFacas').DataTable();
+        }
+        if(documwent.getElementById('tabelaOsPreImpressao')){
+            $('tabelaOsPreImpressao').DataTable();
+        }
         if (chave === "graficos-defeitos") {
             const btn = document.getElementById('btnGerarGraficoDefeitos');
             if (btn) {
@@ -105,7 +113,6 @@ document.querySelectorAll('.sidebar .nav-link').forEach(function (link) {
                     const tipo = document.getElementById('selectTipoGraficoDefeitos').value;
                     const empresa = document.getElementById('selectEmpresaGraficoDefeitos').value;
                     const ctx = document.getElementById('graficoDefeitos').getContext('2d');
-
                     // Exemplo de dados diferentes para cada opção
                     let dados = [];
                     let labels = [];

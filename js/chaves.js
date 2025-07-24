@@ -15,7 +15,7 @@ export const dadosChaves = {
                 <input type="date" class="form-control" id="dataFim">
             </div>
         </div>
-        <table id="tabelaSolicitacaoSaidaFuncionarios" class="table table-striped display mt-3" style="width:900px;">
+        <table id="tabelaSolicitacaoSaidaFuncionarios" class="table table-hover table-dark mt-3">
             <thead class="table-dark">
                 <tr>
                     <th>Foto</th>
