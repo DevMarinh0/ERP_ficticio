@@ -97,3 +97,6 @@ th{
 #inputProdutoCliente{
   height: 300px;
 }
+#inputPedido{
+  width: 350px;
+}

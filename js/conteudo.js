@@ -17,6 +17,11 @@ import { gpdGerenciadorPd } from './gpdGerenciadorPd.js';
 import { parametrosCv } from './parametrosCv.js';
 import { reposicaoFacas } from './recopicaoFacas.js';
 import { osPreimpressao } from './osPreimpressao.js';
+import { osComunicacao } from './osComunicacao.js';
+import { bncRelatoriosSapiens } from './bncRelatoriosSapiens.js';
+import { osManutencaoIndustrial } from './osManutencaoIndustrial.js';
+import { osManutencaoIndustrialSapiens } from './osManutencaoIndustrialSapiens.js';
+import { bncSgi } from './bncSgi.js';
 
 const conteudos = {
     ...saidaFuncionarios,
@@ -38,6 +43,11 @@ const conteudos = {
     ...parametrosCv,
     ...reposicaoFacas,
     ...osPreimpressao,
+    ...osComunicacao,
+    ...bncRelatoriosSapiens,
+    ...osManutencaoIndustrial,
+    ...osManutencaoIndustrialSapiens,
+    ...bncSgi,
 };
 
 
@@ -103,8 +113,23 @@ document.querySelectorAll('.sidebar .nav-link').forEach(function (link) {
         if (document.getElementById('tabelaReposicaoFacas')) {
             $('#tabelaReposicaoFacas').DataTable();
         }
-        if(documwent.getElementById('tabelaOsPreImpressao')){
-            $('tabelaOsPreImpressao').DataTable();
+        if (documwent.getElementById('tabelaOsPreImpressao')) {
+            $('#tabelaOsPreImpressao').DataTable();
+        }
+        if (document.getElementById('tabelaOsComunicacao')) {
+            $('#tabelaOsComunnicacao').DataTable();
+        }
+        if(document.getElementById('tabelaBncRelatoriosSapiens')){
+            $('#tabelaBncRelatoriosSapiens').DataTable();
+        }
+        if(document.getElementById('tabelaOsManutencaoIndustrial')){
+            $('#tabelaOsManutencaoIndustrial').DataTable();
+        }
+        if(document.getElementById('tabelaOsManutencaoIndustrialSapiens')){
+            $('#tabelaOsManutencaoIndustrialSapiens').DataTable();
+        }
+        if(document.getElementById('tabelaBncSgi')){
+            $('#tabelaBncSgi').DataTable();
         }
         if (chave === "graficos-defeitos") {
             const btn = document.getElementById('btnGerarGraficoDefeitos');
